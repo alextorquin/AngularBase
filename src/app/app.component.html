@@ -1,5 +1,5 @@
 <h1>
   Welcome to <a [routerLink]="['/']" routerLinkActive="router-link-active" > {{ title }} ! </a>
 </h1>
-
+<h3>Operations Counter: {{  operationsCounter$ | async }}</h3>
 <router-outlet></router-outlet>

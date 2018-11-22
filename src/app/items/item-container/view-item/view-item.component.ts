@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-view-item',
@@ -8,9 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ViewItemComponent implements OnInit {
   @Input() public item: any;
-  constructor(private route: ActivatedRoute) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.route.params.subscribe(params => (this.item = params['itemId']));
-  }
+  ngOnInit() {}
 }
