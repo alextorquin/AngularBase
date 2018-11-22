@@ -1,5 +1,14 @@
-<h2>List of Items</h2>
+<h3>
+  List of Items
+</h3>
 <ul *ngIf="items.length;else emptyList">
-  <li *ngFor="let item of items">{{ item | json}}</li>
+  <li *ngFor="let item of items">
+    <a [routerLink]="['items', item.description]"
+       routerLinkActive="router-link-active">
+      {{ item | json}}
+    </a>
+  </li>
 </ul>
-<ng-template #emptyList><i>No items to show</i></ng-template>
+<ng-template #emptyList>
+  <i>No items to show</i>
+</ng-template>

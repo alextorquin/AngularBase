@@ -8,14 +8,16 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class NewItemComponent implements OnInit {
   @Output() public save = new EventEmitter<any>();
-  public form: FormGroup;
+  public itemFormGroup: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {}
 
   public ngOnInit() {
-    this.form = this.formBuilder.group({
+    this.itemFormGroup = this.formBuilder.group({
       description: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(30)]]
     });
   }
-  public onSubmit = () => this.save.next(this.form.value);
+  public onSubmit() {
+    this.save.next(this.itemFormGroup.value);
+  }
 }

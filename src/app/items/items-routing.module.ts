@@ -9,7 +9,7 @@ const routes: Routes = [
     component: ItemsContainerComponent
   },
   {
-    path: ':id',
+    path: 'items/:itemId',
     component: ItemContainerComponent
   }
 ];

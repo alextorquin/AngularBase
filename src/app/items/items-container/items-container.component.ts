@@ -10,6 +10,7 @@ export class ItemsContainerComponent implements OnInit {
   constructor() {}
 
   public ngOnInit() {}
+
   public onSave(newItem) {
     this.items.push(newItem);
   }

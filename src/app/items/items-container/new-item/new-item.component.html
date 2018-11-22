@@ -1,10 +1,10 @@
-<h2>
+<h3>
   Create a new item
-</h2>
-<form [formGroup]="form">
+</h3>
+<form [formGroup]="itemFormGroup" (submit)="onSubmit()">
   <fieldset>
     <label>Description</label>
-    <input type="text" name="description">
+    <input type="text" formControlName="description">
   </fieldset>
-  <input type="submit" value="Save">
+  <input type="submit" [disabled]="itemFormGroup.invalid" value="Save">
 </form>
