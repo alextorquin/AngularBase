@@ -5,16 +5,16 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class GlobalService {
-  private operationCounter = 0;
-  private operationCounter$ = new BehaviorSubject<number>(0);
+  private callsCounter = 0;
+  private callsCounter$ = new BehaviorSubject<number>(0);
   constructor() {}
 
-  public selectOperationCounter$() {
-    return this.operationCounter$.asObservable();
+  public selectCallsCounter$() {
+    return this.callsCounter$.asObservable();
   }
 
-  public dispatchOperation() {
-    this.operationCounter++;
-    this.operationCounter$.next(this.operationCounter);
+  public dispatchCall() {
+    this.callsCounter++;
+    this.callsCounter$.next(this.callsCounter);
   }
 }

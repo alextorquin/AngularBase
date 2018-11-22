@@ -8,9 +8,9 @@ import { GlobalService } from './global.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  public operationsCounter$;
+  public callsCounter$;
   title = 'AngularBase';
   constructor(private globalService: GlobalService) {
-    this.operationsCounter$ = this.globalService.selectOperationCounter$();
+    this.callsCounter$ = this.globalService.selectCallsCounter$();
   }
 }

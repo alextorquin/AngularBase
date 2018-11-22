@@ -11,15 +11,15 @@ export class ItemsApiService {
   constructor(private http: HttpClient, private globalService: GlobalService) {}
 
   public post(newItem) {
-    this.globalService.dispatchOperation();
+    this.globalService.dispatchCall();
     return this.http.post(this.url, newItem);
   }
   public getAll() {
-    this.globalService.dispatchOperation();
+    this.globalService.dispatchCall();
     return this.http.get<any[]>(this.url);
   }
   public getById(itemId) {
-    this.globalService.dispatchOperation();
+    this.globalService.dispatchCall();
     return this.http.get<any>(this.url + '/' + itemId);
   }
 }
