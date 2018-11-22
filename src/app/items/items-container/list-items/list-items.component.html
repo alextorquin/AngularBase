@@ -1,3 +1,5 @@
-<p>
-  list-items works!
-</p>
+<h2>List of Items</h2>
+<ul *ngIf="items.length;else emptyList">
+  <li *ngFor="let item of items">{{ item | json}}</li>
+</ul>
+<ng-template #emptyList><i>No items to show</i></ng-template>

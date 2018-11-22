@@ -1,3 +1,10 @@
-<p>
-  new-item works!
-</p>
+<h2>
+  Create a new item
+</h2>
+<form [formGroup]="form">
+  <fieldset>
+    <label>Description</label>
+    <input type="text" name="description">
+  </fieldset>
+  <input type="submit" value="Save">
+</form>
