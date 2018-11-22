@@ -1,5 +1,5 @@
 <p>
   items-container works!
 </p>
-<app-new-item></app-new-item>
-<app-list-items></app-list-items>
+<app-new-item (save)="onSave($event)"></app-new-item>
+<app-list-items [items]="items"></app-list-items>

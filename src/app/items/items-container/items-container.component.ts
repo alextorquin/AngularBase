@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./items-container.component.css']
 })
 export class ItemsContainerComponent implements OnInit {
+  public items: any[] = [];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
+  public ngOnInit() {}
+  public onSave(newItem) {
+    this.items.push(newItem);
   }
-
 }
