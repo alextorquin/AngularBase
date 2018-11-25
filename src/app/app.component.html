@@ -3,3 +3,7 @@
 </h1>
 <h3>Calls Counter: {{  callsCounter$ | async }}</h3>
 <router-outlet></router-outlet>
+<a [routerLink]="['changer','detector']" routerLinkActive="router-link-active">
+  Detector lab</a>
+<a [routerLink]="['changer','family']" routerLinkActive="router-link-active">
+  Family lab</a>

@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: './items/items.module#ItemsModule'
+  },
+  {
+    path: 'changer',
+    loadChildren: './changer/changer.module#ChangerModule'
   }
 ];
 
