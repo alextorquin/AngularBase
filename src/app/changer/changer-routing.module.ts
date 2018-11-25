@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AsyncComponent } from './async/async.component';
 import { DetectorComponent } from './detector/detector.component';
 import { ParentComponent } from './parent/parent.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
 
 const routes: Routes = [
   {
@@ -11,6 +13,14 @@ const routes: Routes = [
   {
     path: 'family',
     component: ParentComponent
+  },
+  {
+    path: 'async',
+    component: AsyncComponent
+  },
+  {
+    path: 'subscribe',
+    component: SubscribeComponent
   }
 ];
 
