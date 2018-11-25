@@ -4,3 +4,7 @@
 </h1>
 <h3>Calls Counter: {{ callsCounter$ | async }}</h3>
 <router-outlet></router-outlet>
+<a [routerLink]="['/redux', 'counter']"
+   routerLinkActive="router-link-active">Counter</a>
+<a [routerLink]="['/redux', 'recounter']"
+   routerLinkActive="router-link-active">Redux Counter</a>

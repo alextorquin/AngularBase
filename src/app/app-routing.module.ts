@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: './items/items.module#ItemsModule'
+  },
+  {
+    path: 'redux',
+    loadChildren: './redux/redux.module#ReduxModule'
   }
 ];
 
