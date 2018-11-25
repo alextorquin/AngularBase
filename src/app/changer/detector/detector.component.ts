@@ -1,9 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-detector',
   templateUrl: './detector.component.html',
-  styleUrls: ['./detector.component.css']
+  styleUrls: ['./detector.component.css'],
+  changeDetection: ChangeDetectionStrategy.Default
 })
 export class DetectorComponent implements OnInit, OnDestroy {
   public counter = 0;
@@ -13,7 +14,7 @@ export class DetectorComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit() {
-    this.interval = setInterval(() => this.change(), 2000);
+    this.interval = setInterval(() => this.change(), 5000);
   }
 
   public onClick() {
@@ -24,7 +25,7 @@ export class DetectorComponent implements OnInit, OnDestroy {
     this.counter++;
     this.item.name = 'ex: ' + this.counter.toExponential();
     this.item.value = this.counter;
-    console.log('item', this.item);
+    console.log('change', this.item);
   }
 
   public ngOnDestroy(): void {
