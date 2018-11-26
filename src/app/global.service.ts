@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
+const INITIAL_STATE = 0;
+
 @Injectable({
   providedIn: 'root'
 })
 export class GlobalService {
-  private callsCounter = 0;
-  private callsCounter$ = new BehaviorSubject<number>(0);
+  private callsCounter = INITIAL_STATE;
+  private callsCounter$ = new BehaviorSubject<number>(this.callsCounter);
   constructor() {}
 
   public selectCallsCounter$() {
