@@ -37,3 +37,5 @@ items-container.ts
 items-container.html
 
 app.effects => items/items.effects
+
+items.effects.ts
