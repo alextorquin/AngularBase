@@ -5,3 +5,6 @@ ng add @ngrx/store
   / actions
   / reducer
   / state 
+
+global.state.ts
+
