@@ -1,14 +1,15 @@
-<h3>
+<h3 i18n="@@create">
   Create a new item
 </h3>
 <form [formGroup]="itemFormGroup"
       (submit)="onSubmit()">
   <fieldset>
-    <label>Description</label>
+    <label i18n="@@description">Description</label>
     <input type="text"
            formControlName="description">
   </fieldset>
   <input type="submit"
          [disabled]="itemFormGroup.invalid"
+         i18n-value="@@save"
          value="Save">
 </form>
