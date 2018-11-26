@@ -3,3 +3,6 @@
 </h2>
 <app-new-item (save)="onSave($event)"></app-new-item>
 <app-list-items [items]="items$ | async"></app-list-items>
+<hr>
+<h3>Redux list</h3>
+<app-list-items [items]="itemsRedux$ | async"></app-list-items>
