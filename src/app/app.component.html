@@ -2,5 +2,6 @@
   Welcome to <a [routerLink]="['/']"
      routerLinkActive="router-link-active"> {{ title }} ! </a>
 </h1>
-<h3 i18n="@@calls_counter">Calls Counter: {{ callsCounter$ | async }}</h3>
+<h3 i18n="@@calls_counter">Calls Counter: {{ callsCounter$ | async | number:'1.2-2' }}</h3>
+<i>{{ now | date:'full' }}</i>
 <router-outlet></router-outlet>

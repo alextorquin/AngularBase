@@ -9,6 +9,7 @@ import { GlobalService } from './global.service';
 })
 export class AppComponent {
   public callsCounter$;
+  public now: number = Date.now();
   title = 'AngularBase';
   constructor(private globalService: GlobalService) {
     this.callsCounter$ = this.globalService.selectCallsCounter$();
