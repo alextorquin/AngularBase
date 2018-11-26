@@ -6,6 +6,7 @@
     "start": "ng serve -o --port 4270",
     "build": "ng build --prod --base-href /dist/angularbase/ ",
     "build:wellcome": "ng build wellcome",
+    "pack:wellcome": "npm run build:wellcome && cd dist/wellcome && npm pack",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
