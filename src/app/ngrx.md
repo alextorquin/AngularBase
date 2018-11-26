@@ -10,3 +10,6 @@ ng add @ngrx/store
 global.state.ts
 global.reducer.ts
 
+/ root 
+ / index.ts
+ / root.state.ts
