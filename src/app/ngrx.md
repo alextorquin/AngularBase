@@ -39,3 +39,7 @@ items-container.html
 app.effects => items/items.effects
 
 items.effects.ts
+
+npm i @ngrx/store-devtools --save
+app.module.ts
+# https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
