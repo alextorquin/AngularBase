@@ -1,7 +1,7 @@
 import { ItemActions, ItemActionTypes } from './items.actions';
 import { INITIAL_ITEMS_STATE, ItemsState } from './items.state';
 
-export function globalReducer(state = INITIAL_ITEMS_STATE, action: ItemActions): ItemsState {
+export function itemsReducer(state = INITIAL_ITEMS_STATE, action: ItemActions): ItemsState {
   let result: ItemsState;
   switch (action.type) {
     case ItemActionTypes.GetAll:

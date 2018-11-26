@@ -29,3 +29,6 @@ ng add @ngrx/effects
 
 items.actions
 items.reducer
+
+index.ts
+root.state.ts
