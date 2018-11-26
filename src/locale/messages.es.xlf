@@ -7,16 +7,20 @@
         <source>
           Welcome to
 
+
           <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
           <x id="INTERPOLATION" equiv-text="{{ title }}"/> !
+
 
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
         </source>
         <target>
           Bienvenid@ a
 
+
           <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
           <x id="INTERPOLATION" equiv-text="{{ title }}"/> !
+
 
           <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
         </target>
@@ -28,9 +32,11 @@
       <trans-unit id="calls_counter" datatype="html">
         <source>Calls Counter:
 
+
           <x id="INTERPOLATION" equiv-text="{{ callsCounter$ | async }}"/>
         </source>
         <target>Contador de llamadas:
+
 
           <x id="INTERPOLATION" equiv-text="{{ callsCounter$ | async }}"/>
         </target>
@@ -68,7 +74,7 @@
           Create a new item
         </source>
         <target>
-          Crerar un nuevo elemento
+          Crear un nuevo elemento
         </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/items/items-container/new-item/new-item.component.html</context>

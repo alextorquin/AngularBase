@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o --port 4270",
+    "start:es": "ng serve --configuration=es -o --port 4270",
     "build": "ng build --prod --base-href /dist/angularbase/ ",
     "test": "ng test",
     "lint": "ng lint",

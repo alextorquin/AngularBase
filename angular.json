@@ -50,7 +50,7 @@
               "buildOptimizer": true,
               "serviceWorker": false,
               "outputPath": "dist/AngularBase-es/",
-              "baseHref": "/",
+              "baseHref": "/dist/angularbase-es/",
 			        "i18nFile": "src/locale/messages.es.xlf",
 			        "i18nFormat": "xlf",
 			        "i18nLocale": "es",
