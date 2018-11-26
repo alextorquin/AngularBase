@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, SimpleCha
   selector: 'app-child',
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css'],
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChildComponent implements OnInit, OnChanges {
   @Input() public counter = 0;

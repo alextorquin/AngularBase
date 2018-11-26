@@ -22,9 +22,9 @@ export class ParentComponent implements OnInit, OnDestroy {
   }
 
   private change() {
-    this.changeRef();
+    // this.changeRef();
     // this.changeValue();
-    // this.changeClone();
+    this.changeClone();
   }
 
   private changeRef() {

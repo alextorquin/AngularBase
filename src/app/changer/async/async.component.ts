@@ -6,7 +6,7 @@ import { ItemsApiService } from '../../items/items-api.service';
   selector: 'app-async',
   templateUrl: './async.component.html',
   styleUrls: ['./async.component.css'],
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AsyncComponent implements OnInit {
   public items$: Observable<any[]>;
