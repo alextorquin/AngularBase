@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "wellcome": [
+        "dist/wellcome"
+      ],
+      "wellcome/*": [
+        "dist/wellcome/*"
+      ]
+    }
   }
 }

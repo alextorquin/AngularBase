@@ -129,6 +129,41 @@
           }
         }
       }
+    },
+    "wellcome": {
+      "root": "projects/wellcome",
+      "sourceRoot": "projects/wellcome/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/wellcome/tsconfig.lib.json",
+            "project": "projects/wellcome/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/wellcome/src/test.ts",
+            "tsConfig": "projects/wellcome/tsconfig.spec.json",
+            "karmaConfig": "projects/wellcome/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/wellcome/tsconfig.lib.json",
+              "projects/wellcome/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "AngularBase"
