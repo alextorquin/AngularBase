@@ -20,3 +20,6 @@ global.reducer.ts
 app.module.ts
 
 items-api.service.ts
+
+app.component.html
+app.component.ts
