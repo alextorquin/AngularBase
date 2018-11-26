@@ -6,5 +6,7 @@ ng add @ngrx/store
   / reducer
   / state 
 
+/global
 global.state.ts
+global.reducer.ts
 
