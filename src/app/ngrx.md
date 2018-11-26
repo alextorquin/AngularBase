@@ -13,3 +13,6 @@ global.reducer.ts
 / root 
  / index.ts
  / root.state.ts
+
+global.actions.ts
+global.reducer.ts
