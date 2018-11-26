@@ -26,3 +26,6 @@ app.component.ts
 
 
 ng add @ngrx/effects
+
+items.actions
+items.reducer
