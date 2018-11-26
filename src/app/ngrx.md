@@ -32,3 +32,8 @@ items.reducer
 
 index.ts
 root.state.ts
+
+items-container.ts
+items-container.html
+
+app.effects => items/items.effects
