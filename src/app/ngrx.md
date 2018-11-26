@@ -23,3 +23,6 @@ items-api.service.ts
 
 app.component.html
 app.component.ts
+
+
+ng add @ngrx/effects
