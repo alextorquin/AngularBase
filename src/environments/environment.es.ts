@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   apiUrl: 'https://api-base.herokuapp.com/api/',
-  locale: 'en'
+  locale: 'es'
 };
 
 /*
