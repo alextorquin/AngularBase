@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { environment } from '../environments/environment';
 import { GlobalService } from './global.service';
 
 @Component({
@@ -9,7 +10,8 @@ import { GlobalService } from './global.service';
 })
 export class AppComponent {
   public callsCounter$;
-  title = 'AngularBase';
+  public title = environment.title;
+  public now: number = Date.now();
   constructor(private globalService: GlobalService) {
     this.callsCounter$ = this.globalService.selectCallsCounter$();
   }

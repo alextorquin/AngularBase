@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2"
+  xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="welcome" datatype="html">
+        <source>
+  Welcome to
+
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+          <x id="INTERPOLATION" equiv-text="{{ title }}"/> !
+
+          <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="calls_counter" datatype="html">
+        <source>Calls Counter:
+
+          <x id="INTERPOLATION" equiv-text="{{ callsCounter$ | async }}"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="view" datatype="html">
+        <source>
+  View item
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/items/item-container/item-container.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="manager" datatype="html">
+        <source>
+  Items Manager
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/items/items-container/items-container.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="create" datatype="html">
+        <source>
+  Create a new item
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/items/items-container/new-item/new-item.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="description" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/items/items-container/new-item/new-item.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="save" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/items/items-container/new-item/new-item.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="list" datatype="html">
+        <source>
+  List of Items
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/items/items-container/list-items/list-items.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="no_items" datatype="html">
+        <source>No items to show</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/items/items-container/list-items/list-items.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="content" datatype="html">
+        <source>
+  Content of the item
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/items/item-container/view-item/view-item.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

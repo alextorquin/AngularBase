@@ -1,4 +1,4 @@
-<h3>
+<h3 i18n="@@list">
   List of Items
 </h3>
 <ul *ngIf="items?.length;else emptyList">
@@ -10,5 +10,5 @@
   </li>
 </ul>
 <ng-template #emptyList>
-  <i>No items to show</i>
+  <i i18n="@@no_items">No items to show</i>
 </ng-template>

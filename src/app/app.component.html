@@ -1,6 +1,8 @@
-<h1>
+<h1 i18n="@@welcome">
   Welcome to <a [routerLink]="['/']"
      routerLinkActive="router-link-active"> {{ title }} ! </a>
 </h1>
-<h3>Calls Counter: {{ callsCounter$ | async }}</h3>
+<h3 i18n="@@calls_counter">Calls Counter: {{ callsCounter$ | async }}</h3>
+<h4>{{ title }}</h4>
+<i>{{ now | date:'full' }}</i>
 <router-outlet></router-outlet>

@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   apiUrl: 'https://api-base.herokuapp.com/api/',
-  locale: 'en',
-  title: 'Angular Application '
+  locale: 'es',
+  title: 'Aplicación Angular'
 };
 
 /*
